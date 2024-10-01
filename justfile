@@ -3,11 +3,16 @@
 _:
 	@just --list
 
-minify:
-	terser script.src.js -o script.min.js
+minify-js:
+	terser sgi.js -o sgi.min.js
+
+minify-css:
+	cleancss -o sgi.min.css sgi.css
+
+minify: minify-js minify-css
 
 [confirm]
 gh-pages:
-	git add script.min.js
+	git add sgi.min.js sgi.min.css
 	git diff --cached --quiet
 	git push
