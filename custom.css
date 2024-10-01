@@ -1,0 +1,198 @@
+@import url("./catppuccin.min.css");
+
+:root {
+	--light-bg: #ffffff;
+	--light-text: #24292e;
+	--light-links: #0366d6;
+	--light-gray-border: #eaecef;
+	--light-border: #e1e4e8;
+	--light-table-header-bg: #f6f8fa;
+	--light-table-tr-border: #c6cbd1;
+	--light-table-td-border: #dfe2e5;
+	--light-highlight: #f6f8fa;
+
+	--sc-light-bg: #fff;
+	--sc-light-accent-bg: #f5f7ff;
+	--sc-light-text: #212121;
+	--sc-light-text-light: #585858;
+	--sc-light-border: #898EA4;
+	--sc-light-accent: #0d47a1;
+	--sc-light-accent-hover: #1266e2;
+	--sc-light-accent-text: var(--sc-light-bg);
+	--sc-light-code: #d81b60;
+	--sc-light-preformatted: #444;
+	--sc-light-marked: #ffdd33;
+	--sc-light-disabled: #efefef;
+
+	--sc-dark-bg: #212121;
+	--sc-dark-accent-bg: #2b2b2b;
+	--sc-dark-text: #dcdcdc;
+	--sc-dark-text-light: #ababab;
+	--sc-dark-accent: #ffb300;
+	--sc-dark-accent-hover: #ffe099;
+	--sc-dark-accent-text: var(--sc-dark-bg);
+	--sc-dark-code: #f06292;
+	--sc-dark-preformatted: #ccc;
+	--sc-dark-disabled: #111;
+
+	--midnight-bg: #000000;
+	--midnight-text: #ffffff;
+	--midnight-links: #9e9eff;
+	--midnight-border: #808080;
+
+	color-scheme: var(--color-scheme, light dark);
+
+	--bg: light-dark(var(--light-bg), var(--ctp-mocha-base));
+	--text: light-dark(var(--light-text), var(--ctp-mocha-text));
+	--links: light-dark(var(--light-links), var(--ctp-mocha-blue));
+	--gray-border: light-dark(var(--light-gray-border), var(--ctp-mocha-surface2));
+	--border: light-dark(var(--light-border), var(--ctp-mocha-surface2));
+	--table-header-bg: light-dark(var(--light-table-header-bg), var(--ctp-mocha-mantle));
+	--table-tr-border: light-dark(var(--light-table-tr-border), var(--table-header-bg));
+	--table-td-border: light-dark(var(--light-table-td-border), var(--ctp-mocha-surface0));
+	--highlight: light-dark(var(--light-highlight), var(--ctp-mocha-mantle));
+}
+
+.theme-sc-auto,
+:root:has(#theme-switch-sc-auto:checked) {
+	--bg: light-dark(var(--sc-light-bg), var(--sc-dark-bg));
+	--text: light-dark(var(--sc-light-text), var(--sc-dark-text));
+	--links: light-dark(var(--sc-light-accent), var(--sc-dark-accent));
+	--border: light-dark(var(--sc-light-border), var(--sc-light-border));
+	--table-header-bg: light-dark(var(--sc-light-accent-bg), var(--sc-dark-accent-bg));
+	--table-tr-border: var(--table-header-bg);
+	--table-td-border: light-dark(var(--sc-light-border), var(--sc-light-border));
+	--highlight: light-dark(var(--sc-light-accent-bg), var(--sc-dark-accent-bg));
+}
+
+.theme-midnight,
+:root:has(#theme-switch-midnight:checked) {
+	--color-scheme: dark;
+	--bg: light-dark(var(--midnight-text), var(--midnight-bg));
+	--text: light-dark(var(--midnight-bg), var(--midnight-text));
+	--links: var(--midnight-links);
+	--gray-border: var(--midnight-border);
+	--border: var(--midnight-border);
+	--table-header-bg: var(--midnight-bg);
+	--table-tr-border: var(--midnight-border);
+	--table-td-border: var(--midnight-border);
+	--highlight: light-dark(var(--midnight-text), var(--midnight-bg));
+}
+
+.theme-light,
+:root:has(#theme-switch-light:checked) {
+	--color-scheme: light;
+}
+
+.theme-dark,
+:root:has(#theme-switch-dark:checked) {
+	--color-scheme: dark;
+}
+
+.theme-sc-light,
+:root:has(#theme-switch-sc-light:checked) {
+	--color-scheme: light;
+}
+
+.theme-sc-dark,
+:root:has(#theme-switch-sc-dark:checked) {
+	--color-scheme: dark;
+}
+
+#theme-switch {
+	font-family: inherit;
+	font-size: inherit;
+	border: 1px solid var(--bg);
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+#theme-switch:hover {
+	border-color: var(--text);
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+a {
+	color: var(--text);
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+a:hover {
+	color: var(--links);
+}
+
+a[href^="#"]:hover {
+	color: var(--text);
+	text-decoration: none;
+}
+
+.theme-color-links a {
+	color: var(--links);
+}
+
+.theme-color-links a:hover {
+	color: var(--text);
+}
+
+.theme-color-links a[href^="#"]:hover {
+	color: var(--links);
+	text-decoration: none;
+}
+
+.markdown-body h1, .markdown-body h2 {
+	border-bottom: 1px solid var(--gray-border);
+}
+
+.markdown-body h1 a, .markdown-body h2 a {
+	color: var(--links);
+	text-decoration: none;
+}
+
+.markdown-body h1 a:hover, .markdown-body h2 a:hover {
+	text-decoration: underline;
+}
+
+.border-gray-light {
+	border-color: var(--gray-border) !important;
+}
+
+.border-top {
+	border-top: 1px var(--border) solid !important;
+}
+
+/* border: 0 */
+hr, .rule {
+	border-bottom: 1px solid var(--table-td-border);
+}
+
+.markdown-body hr {
+	background-color: var(--border);
+}
+
+.markdown-body table th,
+.markdown-body table td {
+	border: 1px solid var(--table-td-border);
+}
+
+.markdown-body table tr {
+	background-color: var(--bg);
+	border-top: 1px solid var(--table-tr-border);
+}
+
+.markdown-body table thead tr,
+.markdown-body table tr:nth-child(2n) {
+	background-color: var(--table-header-bg);
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre,
+.highlight {
+	color-scheme: light;
+	background-color: var(--highlight);
+	color: var(--text);
+}
