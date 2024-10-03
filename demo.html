@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Comprehensive Markdown Guide</title>
+	<style>:root {color-scheme: light dark;}</style>
+	<script async src="./sgi.js?v=1"></script>
+	<link rel="stylesheet" href="https://salif.github.io/assets/css/style.css?v=1" />
+	<link rel="stylesheet" href="./sgi.css?v=1" />
+</head>
+<body>
+	<div class="container-lg px-3 my-5 markdown-body">
+<h1 id="comprehensive-markdown-guide">Comprehensive Markdown Guide</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#why-use-markdown">Why Use Markdown?</a></li>
+</ul></li>
+<li><a href="#headers">Headers</a></li>
+<li><a href="#emphasis">Emphasis</a></li>
+<li><a href="#lists">Lists</a>
+<ul>
+<li><a href="#unordered-lists">Unordered Lists</a></li>
+<li><a href="#ordered-lists">Ordered Lists</a></li>
+</ul></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#code">Code</a>
+<ul>
+<li><a href="#inline-code">Inline code</a></li>
+<li><a href="#block-code-without-syntax-highlighting">Block code without
+syntax highlighting</a></li>
+<li><a href="#block-code-with-syntax-highlighting">Block code with
+syntax highlighting</a></li>
+</ul></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#horizontal-rules">Horizontal Rules</a></li>
+<li><a href="#blockquotes">Blockquotes</a></li>
+<li><a href="#inline-html">Inline HTML</a></li>
+<li><a href="#escaping-characters">Escaping Characters</a></li>
+<li><a href="#task-lists">Task Lists</a></li>
+<li><a href="#footnotes">Footnotes</a></li>
+<li><a href="#definition-lists">Definition Lists</a></li>
+<li><a href="#automatic-url-linking">Automatic URL Linking</a></li>
+<li><a href="#emojis">Emojis</a></li>
+<li><a href="#math-equations">Math Equations</a></li>
+<li><a href="#abbreviations">Abbreviations</a></li>
+<li><a href="#citations">Citations</a></li>
+<li><a href="#github-flavored-markdown">GitHub Flavored Markdown</a>
+<ul>
+<li><a href="#alerts">Alerts</a></li>
+</ul></li>
+<li><a href="#closing">Closing</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Markdown is a lightweight markup language that was created by John
+Gruber and Aaron Swartz in 2004. The primary goal of Markdown is
+readability—the idea is that a Markdown-formatted document should be
+publishable as-is, as plain text, without looking like it's been marked
+up with tags or formatting instructions.</p>
+<p>Markdown has gained immense popularity over the years because of its
+simplicity and readability. It's widely used for writing README files,
+documentation, blog posts, forums, and even in chat applications.</p>
+<h3 id="why-use-markdown">Why Use Markdown?</h3>
+<ul>
+<li><strong>Readability</strong>: Markdown's syntax is designed to be
+simple and intuitive.</li>
+<li><strong>Platform Independent</strong>: You can use Markdown in a
+text editor, in a web editor, or as the formatting syntax for entire
+platforms.</li>
+<li><strong>Rich Output</strong>: With simple syntax, you can produce
+rich text formatting.</li>
+<li><strong>Compatibility</strong>: Many platforms automatically convert
+Markdown to HTML, making it easy to display rich text in a web
+browser.</li>
+<li><strong>Extensible</strong>: While standard Markdown handles most
+common use cases, many platforms introduce their own extensions (called
+'flavors') to add additional functionality like tables, code blocks, and
+more.</li>
+</ul>
+<h2 id="headers">Headers</h2>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># H1</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## H2</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### H3</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">#### H4</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">##### H5</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">###### H6</span></span></code></pre></div>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h2 id="emphasis">Emphasis</h2>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>*italic* or _italic_</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>**bold** or __bold__</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>**_bold and italic_**</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>~~strikethrough~~</span></code></pre></div>
+<p><em>italic</em> or <em>italic</em></p>
+<p><strong>bold</strong> or <strong>bold</strong></p>
+<p><strong><em>bold and italic</em></strong></p>
+<p><del>strikethrough</del></p>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered-lists">Unordered Lists</h3>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Item 1</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Item 2</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Item 2a</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Item 2b</span></code></pre></div>
+<ul>
+<li>Item 1</li>
+<li>Item 2
+<ul>
+<li>Item 2a</li>
+<li>Item 2b</li>
+</ul></li>
+</ul>
+<p><em>Or using dashes:</em></p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item 1</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item 2</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Item 2a</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Item 2b</span></code></pre></div>
+<ul>
+<li>Item 1</li>
+<li>Item 2
+<ul>
+<li>Item 2a</li>
+<li>Item 2b</li>
+</ul></li>
+</ul>
+<h3 id="ordered-lists">Ordered Lists</h3>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Item 1</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Item 2</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Item 3</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ss">   1. </span>Item 3a</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ss">   2. </span>Item 3b</span></code></pre></div>
+<ol type="1">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3
+<ol type="1">
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ol></li>
+</ol>
+<h2 id="links">Links</h2>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">GitHub</span><span class="co">](http://github.com)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">GitHub with Title</span><span class="co">](http://github.com &quot;GitHub&quot;)</span></span></code></pre></div>
+<p><a href="http://github.com">GitHub</a></p>
+<p><a href="http://github.com" title="GitHub">GitHub with Title</a></p>
+<h2 id="images">Images</h2>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="al">![GitHub-Mark-Light](/docs/images/github-mark-white.png#gh-dark-mode-only)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="al">![GitHub-Mark-Dark](/docs/images/github-mark.png#gh-light-mode-only)</span></span></code></pre></div>
+<p><img src="/docs/images/github-mark-white.png#gh-dark-mode-only"
+alt="GitHub-Mark-Light" /></p>
+<p><img src="/docs/images/github-mark.png#gh-light-mode-only"
+alt="GitHub-Mark-Dark" /></p>
+<p><em>Add #gh-light-mode-only or #gh-dark-mode-only to the end of the
+image link to make it only visible in light or dark mode,
+respectively.</em></p>
+<h2 id="code">Code:</h2>
+<h3 id="inline-code">Inline code:</h3>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Here is <span class="in">`inline code`</span>.</span></code></pre></div>
+<p>Here is <code>inline code</code>.</p>
+<h3 id="block-code-without-syntax-highlighting">Block code without
+syntax highlighting:</h3>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>```This is a block of code.```</span></code></pre></div>
+<pre><code>This is a block of code.</code></pre>
+<h3 id="block-code-with-syntax-highlighting">Block code with syntax
+highlighting:</h3>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, world!&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello, world!&quot;</span>)</span></code></pre></div>
+<h2 id="tables">Tables</h2>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Header One     <span class="pp">|</span> Header Two     <span class="pp">|</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="pp">| --------------</span> <span class="pp">| --------------</span> <span class="pp">|</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Content Cell 1 <span class="pp">|</span> Content Cell 2 <span class="pp">|</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Content Cell 3 <span class="pp">|</span> Content Cell 4 <span class="pp">|</span></span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Header One</th>
+<th>Header Two</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell 1</td>
+<td>Content Cell 2</td>
+</tr>
+<tr>
+<td>Content Cell 3</td>
+<td>Content Cell 4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+<p>Use three or more dashes, asterisks, or underscores:</p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">***</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">___</span></span></code></pre></div>
+<hr />
+<hr />
+<hr />
+<h2 id="blockquotes">Blockquotes</h2>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; This is a blockquote.</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; &gt; This is a nested blockquote.</span></span></code></pre></div>
+<blockquote>
+<p>This is a blockquote.</p>
+<blockquote>
+<p>This is a nested blockquote.</p>
+</blockquote>
+</blockquote>
+<h2 id="inline-html">Inline HTML</h2>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;color:red&quot;</span><span class="dt">&gt;</span>This is red text.<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> align</span><span class="op">=</span><span class="st">&quot;center&quot;</span><span class="dt">&gt;</span>Centered Text<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div>
+<p><span style="color:red">This is red text.</span></p>
+<div align="center">Centered Text</div>
+
+<h2 id="escaping-characters">Escaping Characters</h2>
+<p>Backslash escapes Markdown characters:</p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="sc">\*</span>Not italic<span class="sc">\*</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="sc">\#</span> Not a header</span></code></pre></div>
+<p>*Not italic*</p>
+<p># Not a header</p>
+<h2 id="task-lists">Task Lists</h2>
+<p>In GitHub Flavored Markdown, you can create task lists:</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[x]</span> Completed task</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Incomplete task</span></code></pre></div>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="" />Completed
+task</label></li>
+<li><label><input type="checkbox" />Incomplete task</label></li>
+</ul>
+<h2 id="footnotes">Footnotes</h2>
+<p>Some Markdown processors allow you to use footnotes, like so:</p>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>Here&#39;s a sentence with a footnote. <span class="ot">[^1]</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>This is the footnote.</span></code></pre></div>
+<p>Here's a sentence with a footnote. <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<h2 id="definition-lists">Definition Lists</h2>
+<p>Not universally supported, but useful where available:</p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>Apple</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>:   Pomaceous fruit of plants of the genus Malus in the family Rosaceae.</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>Orange</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>:   The fruit of an evergreen tree of the genus Citrus.</span></code></pre></div>
+<p>Apple</p>
+<p>: Pomaceous fruit of plants of the genus Malus in the family
+Rosaceae.</p>
+<p>Orange</p>
+<p>: The fruit of an evergreen tree of the genus Citrus.</p>
+<h2 id="automatic-url-linking">Automatic URL Linking</h2>
+<p>Most Markdown processors will automatically turn URLs into links:</p>
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>http://www.example.com</span></code></pre></div>
+<p><a href="http://www.example.com">http://www.example.com</a></p>
+<h2 id="emojis">Emojis</h2>
+<p>On platforms that support it (like GitHub), you can use shorthand for
+emojis:</p>
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="sc">:smile:</span> <span class="sc">:+1:</span></span></code></pre></div>
+<p><span class="emoji" data-emoji="smile">😄</span> <span class="emoji"
+data-emoji="+1">👍</span></p>
+<h2 id="math-equations">Math Equations</h2>
+<p>Some Markdown renderers like the one used by Jupyter Notebook support
+<code>LaTeX</code> for rendering math equations:</p>
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="in">```math</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="in">E = mc^2</span></span></code></pre></div>
+<p><span
+class="math display"><em>E</em> = <em>m</em><em>c</em><sup>2</sup></span></p>
+<h2 id="abbreviations">Abbreviations</h2>
+<p>Some extended Markdown processors allow abbreviations:</p>
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>*<span class="co">[</span><span class="ot">HTML</span><span class="co">]</span>: Hyper Text Markup Language</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>*<span class="co">[</span><span class="ot">W3C</span><span class="co">]</span>:  World Wide Web Consortium</span></code></pre></div>
+<p>*[HTML]: Hyper Text Markup Language</p>
+<p>*[W3C]: World Wide Web Consortium</p>
+<h2 id="citations">Citations</h2>
+<p>Certain academic Markdown variants allow citations in
+<code>BibTeX</code> format:</p>
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>According to Smith <span class="co">[</span><span class="ot">@smith04</span><span class="co">]</span>, blah blah...</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="ot">[@smith04]: </span>John Smith. 2004. The Book Title. Publisher Name.</span></code></pre></div>
+<p>According to Smith [@smith04], blah blah...</p>
+<p>[@smith04]: John Smith. 2004. The Book Title. Publisher Name.</p>
+<h2 id="github-flavored-markdown">GitHub Flavored Markdown</h2>
+<h3 id="alerts">Alerts</h3>
+<p>GitHub Flavored Markdown supports alerts that can be used to
+highlight important information:</p>
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>  <span class="at">&gt; </span><span class="co">[</span><span class="ot">!NOTE</span><span class="co">]</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="at">  &gt; Highlights information that users should take into account, even when skimming.</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">&gt; </span><span class="co">[</span><span class="ot">!TIP</span><span class="co">]</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="at">  &gt; Optional information to help a user be more successful.</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">&gt; </span><span class="co">[</span><span class="ot">!IMPORTANT</span><span class="co">]</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="at">  &gt; Crucial information necessary for users to succeed.</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">&gt; </span><span class="co">[</span><span class="ot">!WARNING</span><span class="co">]</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="at">  &gt; Critical content demanding immediate user attention due to potential risks.</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">&gt; </span><span class="co">[</span><span class="ot">!CAUTION</span><span class="co">]</span></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a><span class="at">  &gt; Negative potential consequences of an action.</span></span></code></pre></div>
+<div class="note">
+<div class="title">
+<p>Note</p>
+</div>
+<p>Highlights information that users should take into account, even when
+skimming.</p>
+</div>
+<div class="tip">
+<div class="title">
+<p>Tip</p>
+</div>
+<p>Optional information to help a user be more successful.</p>
+</div>
+<div class="important">
+<div class="title">
+<p>Important</p>
+</div>
+<p>Crucial information necessary for users to succeed.</p>
+</div>
+<div class="warning">
+<div class="title">
+<p>Warning</p>
+</div>
+<p>Critical content demanding immediate user attention due to potential
+risks.</p>
+</div>
+<div class="caution">
+<div class="title">
+<p>Caution</p>
+</div>
+<p>Negative potential consequences of an action.</p>
+</div>
+<h2 id="closing">Closing</h2>
+<p>Remember, not all of these features are supported in every Markdown
+processor. Always check your specific processor's documentation for
+supported features.</p>
+<p>You can use this as a README for your repository. Feel free to expand
+and improve the guide to better fit your requirements or to add more
+advanced features. Also, feel free to contribute and expand this guide
+for better community knowledge.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://www.markdownguide.org/">Markdown Guide</a> - A free
+and open-source reference guide that explains how to use Markdown.</li>
+<li><a href="https://daringfireball.net/projects/markdown/">Daring
+Fireball</a> - The original Markdown project by John Gruber.</li>
+<li><a href="https://github.github.com/gfm/">GitHub Flavored
+Markdown</a> - GitHub's variant of Markdown, which includes features
+like task lists and tables.</li>
+<li><a href="https://commonmark.org/">CommonMark</a> - A strong
+specification of Markdown, designed to clarify many edge cases and
+inconsistencies in the original Markdown specification.</li>
+<li><a
+href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown
+Cheatsheet</a> - A quick reference to Markdown syntax.</li>
+<li><a href="https://pandoc.org/">Pandoc</a> - A universal document
+converter that supports Markdown and many other markup languages.</li>
+<li><a href="https://stackedit.io/">StackEdit</a> - An in-browser
+Markdown editor.</li>
+<li><a
+href="https://chat.openai.com/?model=gpt-4#:~:text=browser%20Markdown%20editor.-,Markdown%20Tutorial,-%3A%20An%20interactive%20tutorial">Markdown
+Tutorial</a> - An interactive tutorial to learn Markdown.</li>
+<li><a href="https://jupyter.org/">Jupyter Notebook</a> - Although not
+strictly a Markdown resource, Jupyter Notebooks use Markdown for all
+non-code cells, making it a useful tool for scientific documentation
+where code and commentary are intermixed.</li>
+<li><a
+href="https://blog.jakelee.co.uk/github-alert-experiments/">GitHub
+Markdown Alerts</a> - A blog post that discusses the use of GitHub
+Markdown Alerts</li>
+<li><a href="https://github.com/orgs/community/discussions/16925">GitHub
+Markdown Alerts Discussion</a> - A GitHub discussion that discusses the
+use of GitHub Markdown Alerts</li>
+</ul>
+<h2 id="license">License</h2>
+<p>This project is released under the terms of the <strong>MIT
+License</strong>, which permits use, modification, and distribution of
+the code, subject to the conditions outlined in the license.</p>
+<ul>
+<li>The <a href="https://choosealicense.com/licenses/mit/">MIT
+License</a> provides certain freedoms while preserving rights of
+attribution to the original creators.</li>
+<li>For more details, see the <a
+href="https://github.com/scottgriv/markdown-demo/blob/main/LICENSE">LICENSE</a>
+file in this repository. in this repository.</li>
+</ul>
+<h2 id="credits">Credits</h2>
+<p><strong>Author:</strong> <a href="https://github.com/scottgriv">Scott
+Grivner</a></p>
+<p><strong>Reference:</strong> <a
+href="https://github.com/scottgriv/markdown-demo">Main Branch</a></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>This is the footnote.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<a href="#theme-switch-link" id="theme-switch-link">Theme</a>
+
+<select id="theme-switch" aria-label="Choose a theme">
+	<option id="theme-switch-auto" value="theme-auto">Theme: Auto</option>
+	<option id="theme-switch-light" value="theme-light">Theme: Light</option>
+	<option id="theme-switch-dark" value="theme-dark">Theme: Dark</option>
+	<option id="theme-switch-midnight" value="theme-midnight">Theme: Midnight</option>
+	<option id="theme-switch-sc-auto" value="theme-sc-auto">Theme: SC Auto</option>
+	<option id="theme-switch-sc-light" value="theme-sc-light">Theme: SC Light</option>
+	<option id="theme-switch-sc-dark" value="theme-sc-dark">Theme: SC Dark</option>
+</select>
+</div>
+</body>
+</html>

@@ -35,15 +35,9 @@
 			"theme-sc-light", "theme-sc-dark");
 		if (theme !== "theme-auto") {
 			document.documentElement.classList.add(theme);
-			if (theme === "theme-sc-light" || theme === "theme-sc-dark") {
-				document.documentElement.classList.add("theme-sc-auto");
-			}
 		}
 		return theme;
 	}
-
-	var theme = set_theme(null);
-	console.debug("localStorage theme is", theme);
 
 	function set_all() {
 		var el_theme_switch = document.getElementById(theme_switch_id);
@@ -103,12 +97,13 @@
 
 		if (window.location.hostname === "salif.github.io") {
 			(function (c_, o_, u_, n_, t_, e_, r_) {
-				e_ = c_.createElement('script'), r_ = c_.getElementsByTagName(o_)[0]; e_.async = 1;
+				e_ = c_.createElement("script"), r_ = c_.getElementsByTagName(o_)[0]; e_.async = 1;
 				e_.setAttribute(n_, t_); e_.src = u_; r_.parentNode.insertBefore(e_, r_);
-			})(document, 'script', 'https://gc.zgo.at/count.js', 'data-goatcounter', 'https://sgi.goatcounter.com/count');
+			})(document, "script", "https://gc.zgo.at/count.js", "data-goatcounter", "https://sgi.goatcounter.com/count");
 		}
 	}
 
+	var theme = set_theme(null);
 	console.debug("readyState is", document.readyState);
 	if (document.readyState === "loading") {
 		window.addEventListener("DOMContentLoaded", set_all);
